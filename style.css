@@ -1,0 +1,309 @@
+body{
+	margin: 0;
+}
+
+.left ul {
+	list-style:none;
+	margin:0; padding:0;
+}
+.left li {
+	  padding: 4em 1em;
+	}
+  
+.left a {
+	color:shade(darkslategray, 50%);
+	text-decoration:none;
+	border-bottom:1px solid transparent;
+	transition: color ease .35s, border-bottom-color ease .35s;
+
+	&:hover {
+	   color:white;
+	   border-bottom-color:white; 
+	}
+
+	&.open {
+	  font-size:1.75rem;
+	  font-weight:700;
+	  border:0;
+	}
+}
+
+/*Left navigation bar*/
+.left {
+  z-index: 9999;
+  position:fixed; /* keep fixed to window*/
+  padding: 10px;
+  top: 0; 
+  left: 0; /*// position to top left of window*/
+  height:100vh; 
+  width:5%; /*//set dimensions*/
+  background: #f4f4f4;
+  transition: width ease .5s; /*// fluid transition when resizing*/
+  border-right: 0.1px solid black;
+}
+
+.bottom-top-writting{
+	writing-mode: tb-rl;
+	transform: rotateZ(180deg);
+
+}
+/*End of left navigation bar*/
+
+
+
+
+/* Right side contents */
+.right {
+  background-color: #f4f4f4;
+  position: relative;
+  padding-left: 10%; /* push the right column past the left column, with some room as well.*/
+  transition: margin-left ease .5s; /* fluid transition when resizing*/
+}
+
+.landing-title{
+	padding-top: 200px;
+	font-family: ;
+	font-size: 5vmin;
+}
+
+.landing-sub-title{
+	margin-top: -2%;
+	width: 50%;
+	color: grey;
+}
+
+.page-title{
+	margin-top: 20%;
+	font-size: 5vmin;
+}
+
+.sub-title{
+	width: 50%;
+	color: grey;
+}
+/*#################PAGE VIEWS##################*/
+.view-one{
+	height: 100vh;
+}
+
+.view-two{
+	height: 100vh;
+	background-color: #f4f4f4;
+
+}
+
+.view-three{
+	height: 100vh;
+	background-color: #f4f4f4;
+}
+/*################END OF PAGE VIEWS################*/
+
+.venture-showcase{
+	margin-top: 10%;
+	width: 90%;
+	background-color: white;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-auto-rows: minmax(200px, auto);
+	grid-column-gap: 30px;
+	justify-self: center;
+	border: 0.1px solid black;
+}
+
+.map{
+	height: 50%;
+	width: 90%;
+	background-color: white;
+	border: 0.1px solid black;
+}
+
+.contact{
+	display: grid;
+	width: 90%;
+	grid-template-columns: repeat(2, 1fr);
+	grid-column-gap: 50px;
+	
+}
+
+#address{
+	width: 50%;
+	justify-self: left;	
+}
+
+#phone_num{
+	justify-self: right;
+}
+
+.footer{
+	padding: 4em 0;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-column-gap: 30px;
+	height: 30%;
+	background-color: white;
+}
+/* End of right side */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*################## V E N T U R E 1 ##############################*/
+
+.nav{
+	margin-top: -2%;
+	height: 25%;
+	width: 100%;
+	background-color: #f4f4f4;
+}
+
+.nav li{
+	display: inline-block;
+	padding: 2em 4em;
+}
+
+.li-right{
+	float: right;
+}
+
+.infratech-view-one{
+	height: 100vh;
+	background-size: cover;
+}
+
+.infratech-carousel{
+	height: 60%;
+	background-color: #fafaf4;
+	border: 0.1px solid black;
+}
+
+.profile-info{
+	margin-left: 8%;
+	padding: 4em 0;
+	
+}
+.profile-info .sub-title{
+		width: 70%;
+		color: black;
+	}
+
+.profile-info-title{
+	font-size: 5vmin;
+}
+
+.portfolio-showcase{
+	margin: 0 auto;
+	width: 80%;
+	background-color: grey;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-auto-rows: minmax(30vmin, 30vmin);
+	grid-gap: 30px;
+	padding: 30px;
+}
+
+.portfolio-frame{
+	background: #f4f4f4;
+	background-size: cover;
+	height: 20vmin;
+	width: 20vmin;
+	justify-self: center;
+	align-self: center;
+}
+
+.portfolio-images{
+	height: 20vmin;
+	width: 20vmin;
+}
+
+.image-title{
+	text-align: center;
+	color: black;
+	font-size: 2.2vmin;
+}
+
+.clientle-showcase{
+	margin: 0 auto;
+	width: 80%;
+	background-color: grey;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-auto-rows: minmax(10vmin, 10vmin);
+	padding: 30px;
+}
+/*################## E N D  O F  V E N T U R E 1 ##############################*/
+
+
+
+
+/*################## I N F R A T E C H  ##############################*/
+.equipment-showcase{
+	margin: 0 auto;
+	width: 80%;
+	background-color: grey;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-auto-rows: minmax(30vmin, 30vmin);
+	grid-gap: 30px;
+	padding: 30px;
+}
+
+.equipment-frame{
+	background: #f4f4f4;
+	background-size: cover;
+	height: 20vmin;
+	width: 20vmin;
+	justify-self: center;
+	align-self: center;
+}
+
+.equipment-images{
+	height: 20vmin;
+	width: 20vmin;
+}
+
+/*################## E N D  O F  I N F R A T E C H  ##############################*/
+
+
+/*################## D E V E L O P E R S   ##############################*/
+.developers-showcase{
+	margin: 0 auto;
+	width: 80%;
+	background-color: grey;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-auto-rows: minmax(30vmin, 30vmin);
+	grid-gap: 30px;
+	padding: 30px;
+}
+
+.developers-frame{
+	background: #f4f4f4;
+	background-size: cover;
+	height: 20vmin;
+	width: 20vmin;
+	justify-self: center;
+	align-self: center;
+}
+
+.developers-images{
+	height: 20vmin;
+	width: 20vmin;
+}
+
+/*################## E N D  O F  D E V E L O P E R S  ##############################*/
+
+
+
+
+
+
+
